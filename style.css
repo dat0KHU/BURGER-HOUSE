@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1C1C1C;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  
+  width: 165px;
+  height: 50px;
+
+  background: #ff5e00;
+  border-radius: 8px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn--small {
+  width: 140px;
+  height: 40px;
+  font-size: 14px
+}
+
+/* header */
+
+.header {
+  padding: 25px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  width: 70px;
+  margin-top: -20px;
+}
+
+.header_list {
+  display: flex;
+  gap: 30px;
+}
+
+.header_nav a {
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.header_nav a.active {
+  font-size: 14px;
+  opacity: 1;
+}
+
+.header_nav a:hover {
+  opacity: 0.9;
+}
+
+/* welcome page */
+
+.welcome {
+
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  padding: 240px 0;
+  margin-top: -100px; 
+  background-image: url("./images/Pizza_Closeup_Ham_Tomatoes_Basil_593448_6000x4000.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome_text {
+  width: 550px;
+
+  color: #ffffff;
+
+  background-color: #171616;
+  border-radius: 16px;
+  padding: 100px 70px;
+}
+
+.welcome_subtitle {
+  margin-bottom: 7px;
+
+  font-size: 16px;
+  letter-spacing: 0.1em;
+
+
+}
+
+.welcome_title {
+  font-size: 58px;
+}
+
+.welcome_desc {
+  margin: 40px 0;
+  font-size: 18px;
+  opacity: 1;
+}
+
+/* food list */
+
+.food_list {
+  padding: 115px 0;
+}
+
+.food_list .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.food_list_text {
+ padding: 30px 20px; 
+}
+
+.food_list_card {
+  width: 260px;
+
+  overflow: hidden;
+
+  background-color: #312F30;
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.food_list_img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+
+.food_list_title {
+  margin-bottom: 13px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.food_list_desc {
+  font-size: 16px;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+/* Order */
+
+.order {
+  background: #312F30;
+  padding: 65px 0;
+}
+
+.order .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order_text {
+  max-width: 360px;
+  padding-right: 100px;
+}
+
+.order_title {
+  margin-bottom: 25px;
+  font-size: 44px;
+}
+
+.order_desc {
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+
+.order_price {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+
+  color: #ff5e00;
+}
+
+.old_price {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-decoration-line: line-through;
+  color: #ff5e00;
+  opacity: 0.5;
+}
+
+.order .btn {
+  margin-top: 10px;
+}
+
+/* products */
+
+.product {
+  padding: 100px 0;
+}
+
+.product .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.product_card {
+  box-sizing: border-box;
+
+  width: 555px;
+  min-height: 299px;
+  
+  padding: 60px 30px 60px 290px;
+}
+
+.product_card:nth-child(even) {
+  padding-left: 50px;
+  padding-right: 290px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product .btn {
+ margin-top: 10px;
+}
+
+.product_title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.product_desc {
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.product_price {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #ff5e00;
+}
+
+.old_price--product {
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+
+.card-queen {
+  background-image: url("./images/product-1.jpg");
+}
+
+.card-hut {
+  background-image: url("./images/product-2.jpg");
+}
+
+.card-king {
+  background-image: url("./images/product-3.jpg");
+}
+
+.card-papa {
+  background-image: url("./images/product-4.jpg");
+}
+
+/* feedback */
+
+.feedback .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 880px;
+  padding-bottom: 150px;
+}
+
+.feedback_text {
+  margin: 0;
+  width: 370px;
+  text-align: center;
+}
+
+.feedback_text::before {
+  content: url("./images/icons/quote.svg");
+}
+
+.feedback_desc {
+  opacity: 0.7;
+  margin: 40px 0 30px 0;
+}
+
+.feedback_author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/* download */
+
+.download {
+  background: #312F30;
+  padding: 60px 0;
+}
+
+.download .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.download_text {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/* footer */
+
+.footer {
+  padding: 120px 0;
+}
+
+.footer_logo {
+  width: 70px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer .footer_title {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 1;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "contacts nav socials";
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.footer_contacts {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+
+.footer_link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer_link + .footer_link {
+  margin-top: 10px;
+}
+
+.footer_link::before {
+  width: 12px;
+  height: 12px;
+}
+
+.footer_link--email::before {
+  content: url("./images/icons/mail.svg");
+}
+
+.footer_link--web::before {
+  content: url("./images/icons/global.svg");
+}
+
+.footer_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_item + .footer_item {
+  margin-top: 15px;
+}
+
+.footer_social_link {
+ margin-left: 10px;
+}
